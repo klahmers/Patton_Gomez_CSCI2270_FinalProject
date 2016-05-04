@@ -70,6 +70,7 @@ class Books
         void insertRating(string title); //rate a book in the library
         int calculatePrice(); //will calculate the total price
         void checkout(); //will call print cart items and ask questions etc.
+        bool checkIfDone(); //check if cart is empty
 
     protected:
 
