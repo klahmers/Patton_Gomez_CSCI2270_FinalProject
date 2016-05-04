@@ -436,3 +436,10 @@ cout<<endl;
 cout<<"Goodbye!"<<endl; ///the program exits after the user checks out
 exit(0);
 }
+
+bool Books::checkIfDone(){
+    if(head==NULL)
+        return false;
+    else
+       return true;
+}
