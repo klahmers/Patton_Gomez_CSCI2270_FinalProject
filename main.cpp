@@ -73,9 +73,20 @@ int main()
         {
             libros.checkout();
         }
-        else
+        else if(menu == "8")
         {
-            quit = true;
+            bool check;
+            string quitOrNah;
+            check=libros.checkIfDone();
+            if(check==false)
+                quit = true;
+            else{
+                cout<<"Your cart has un-purchased books, do you want to quit? (Y/N)"<<endl;
+                cin>>quitOrNah;
+                if(quitOrNah=="N")
+                    quit=false;
+                else
+                    quit=true;
         }
     }
 cout<<"Goodbye!"<<endl;
